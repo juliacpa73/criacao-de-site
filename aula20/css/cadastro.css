@@ -1,0 +1,57 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, pink, black);
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px; /* margem interna*/
+    border-radius: 15px;
+    width: 20%; /*largura da box em relação a página*/
+
+}
+fieldset{
+    border: 3px solid rgb(246, 210, 216);
+}
+legend{
+    border: 1px solid  rgb(246, 210, 216);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(249, 150, 166);
+    border-radius: 8px;
+    color: white;
+    
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.submit{
+    border: 1px solid  rgb(250, 120, 141);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(250, 120, 141);
+    border-radius: 8px;
+    color: white;
+}
