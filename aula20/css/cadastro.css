@@ -47,11 +47,28 @@ legend{
     pointer-events: none;
     transition: .5s;
 }
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: palevioletred;
+}
+#dataNascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none
+}
 .submit{
-    border: 1px solid  rgb(250, 120, 141);
+    width: 100%;
     padding: 10px;
     text-align: center;
-    background-color: rgb(250, 120, 141);
+    background-color:rgb(250, 120, 141);
     border-radius: 8px;
     color: white;
+    border: none;
+    cursor: pointer;
+}
+#submit{
+    background-color:rgb(250, 120, 141);
 }

@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro.css"> 
-    <title>Formulário | GN</title>
+    <title>Formulário de cadastro</title>
 </head>
 <body>
     <div class="box">
         <form action="">
             <fieldset> <!-- Faz a caixa onde ficarão as labels-->
                 <legend><strong>Formulário do cliente</strong></legend>
+                <br>
                 <div class="inputBox">
                     <input type="text" 
                             name="nome" 
                             id="nome" 
                             class="inputUser" 
                             autofocus required>
-                    <label for="nome">Nome completo</label>
+                    <label for="nome" 
+                           class="labelInput">Nome completo</label>
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="email" 
+                    <input type="text" 
                             name="email" 
-                            id="email" 
+                            id="email"
                             class="inputUser" 
                             required>
-                    <label for="email">Email</label>
+                    <label for="email" 
+                           class="labelInput">Email</label>
                 </div>
                 <br>
                 <div class="inputBox">
@@ -35,7 +38,8 @@
                             id="telefone" 
                             class="inputUser" 
                             required>
-                    <label for="telefone">Telefone</label>
+                    <label for="telefone"
+                           class="labelInput">Telefone</label>
                 </div>
                 <br>
                 <p>Sexo: </p>
@@ -65,7 +69,6 @@
                     <input type="date" 
                             name="dataNascimento" 
                             id="dataNascimento" 
-                            class="inputUser"
                             required>
                 </div>
                 <br>
@@ -75,7 +78,8 @@
                             id="cidade" 
                             class="inputUser" 
                             required>
-                    <label for="cidade">Cidade</label>
+                    <label for="cidade" 
+                           class="labelInput">Cidade</label>
                 </div>
                 <br>
                 <div class="inputBox">
@@ -84,7 +88,8 @@
                             id="estado" 
                             class="inputUser" 
                             required>
-                    <label for="estado">Estado</label>
+                    <label for="estado" 
+                           class="labelInput">Estado</label>
                 </div>
                 <br>
                 <div class="inputBox">
@@ -93,7 +98,8 @@
                             id="endereco" 
                             class="inputUser" 
                             required>
-                    <label for="endereco">Endereço</label>
+                    <label for="endereco" 
+                           class="labelInput">Endereço</label>
                 </div>
                 <br>
                 <input type="submit" 
