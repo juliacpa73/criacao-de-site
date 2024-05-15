@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="telaLogin">
-        <h1>Login</h1>
-        <input type="text" placeholder="Nome">
-        <br><br>
-        <input type="text" placeholder="Senha">
-        <br><br>
-        <button>Enviar</button>
+        <form action="../php/logar.php" method="post">
+            <h1>Login</h1>
+            <input type="text" name="nome" placeholder="Nome">
+            <br><br>
+            <input type="password" name="senha" placeholder="Senha">
+            <br><br>
+            <button>Enviar</button>
+        </form>
     </div>
 </body>
 </html>
