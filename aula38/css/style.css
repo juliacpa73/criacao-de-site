@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+.box{ /* centralização de página*/
+    color:gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(250, 250, 250, 0.8);
+    padding: 15px; /*Espaço entre o elemento e a borda*/
+    border-radius: 15px; /*Para arredondar a borda*/
+    width: 20%; /*largura da box*/
+}
+fieldset{ /*fielset faz a borda*/
+    border: 2px solid rgb(237, 237, 207);
+    border-radius: 7px;
+}
+legend{ /*borda da legenda Formulário de clientes*/
+    border: 2px solid rgb(237, 237, 207);
+    padding: 10px;
+    text-align: center; /*Alinha o texto*/
+    background-color: rgb(237, 237, 207);
+    border-radius: 7px;
+    color: gray;
+}
+.inputBox{ 
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(237, 237, 207);
+    outline: none; /*Remove a borta do campo de texto ao clicar*/
+    color: gray;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;/*Espaçamento entre as letras*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.espacamento{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none; /*Point-events indica que qualquer lugar que clicar, vai executar uma ação*/
+    transition: -5s;
+    
+}
+.inputUser:focus ~ .labelInput, .inputUser:valid ~.labelInput{ /*Quando uso focus, significa quero dar uma ação para o label*/ 
+    top: -15px;
+    font-size: 12px;
+}
+
+#dataNascimento{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(237, 237, 207);
+    outline: none; /*Remove a borta do campo de texto ao clicar*/
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 1px;/*Espaçamento entre as letras*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#submit{
+    background-color: rgb(237, 237, 207);
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    color: gray;
+}
